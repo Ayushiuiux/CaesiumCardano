@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="assets/css/all.css">
+
+    <!-- custom css here -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Caesium Lab Wallet</title>
+</head>
+
+<body class="sidebar-is-reduced">
+    <header class="l-header">
+        <div class="l-header__inner clearfix">
+            <div class="c-header-icon js-hamburger">
+                <div class="hamburger-toggle">
+                    <span class="bar-top"></span>
+                    <span class="bar-mid"></span>
+                    <span class="bar-bot"></span>
+                </div>
+            </div>
+            <div class="c-header-icon ms-auto">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                        <a href="javascript:;" class="right_menu_icon">
+                            <i class="fas fa-sync-alt font_icon"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="javascript:;" class="right_menu_icon">
+                            <i class="fa fa-bell font_icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="l-sidebar">
+        <div class="logo">
+            <div class="logo__txt">
+                <img src="assets/images/logo.png" alt="" class="img-fluid">
+                <h5 class="mb-0">Caesium Lab Wallet</h5>
+            </div>
+        </div>
+        <div class="l-sidebar__content">
+            <nav class="c-menu js-menu side_menu">
+                <ul class="u-list">
+                    <li class="c-menu__item is-active">
+                        <a href="javascript:;" class="c-menu__item__inner">
+                            <i class="fas fa-wallet font_icon"></i>
+                        </a>
+                    </li>
+                    <li class="c-menu__item">
+                        <a href="javascript:;" class="c-menu__item__inner">
+                            <i class="fas fa-sliders-h font_icon"></i>
+                        </a>
+                    </li>
+                    <li class="c-menu__item">
+                        <a href="javascript:;" class="c-menu__item__inner">
+                            <i class="far fa-chart-bar font_icon"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="u_leftlist list-unstyled">
+                    <li class="c-menu__item">
+                        <a href="javascript:;" class="c-menu__item__inner menu_text">
+                            timeblockchain
+                        </a>
+                    </li>
+                    <li class="c-menu__item">
+                        <a href="javascript:;" class="c-menu__item__inner menu_text">
+                            test1
+                        </a>
+                    </li>
+                    <li class="bottom_add_wallet">
+                        <a href="#addWalletModalToggle" data-bs-toggle="modal">
+                            <i class="fas fa-plus font_icon"></i> Add Wallet</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+<main class="l-main">
+    <div class="content-wrapper content-wrapper--with-bg">
+        <!-- main section content start here -->
+        <div class="top_note">
+            <p>The balance and transaction history of this wallet is 97.22% synced with the blockchain.</p>
+        </div>
+        <div class="tab_menu_section">
+            <ul class="nav nav-pills mb-0 piils_menu nav-justified" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-summary-tab" data-bs-toggle="pill" data-bs-target="#pills-summary" type="button" role="tab" aria-controls="pills-summary" aria-selected="true">
+                        <i class="fas fa-chart-pie font_icon"></i>
+                        Summary
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-send-tab" data-bs-toggle="pill" data-bs-target="#pills-send" type="button" role="tab" aria-controls="pills-send" aria-selected="false">
+                        <i class="fas fa-arrow-up font_icon"></i>
+                        Send
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-receive-tab" data-bs-toggle="pill" data-bs-target="#pills-receive" type="button" role="tab" aria-controls="pills-receive" aria-selected="false">
+                        <i class="fas fa-arrow-down font_icon"></i>
+                        Receive
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-transactions-tab" data-bs-toggle="pill" data-bs-target="#pills-transactions" type="button" role="tab" aria-controls="pills-transactions" aria-selected="false">
+                        <i class="fas fa-receipt font_icon"></i>
+                        Transactions
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-more-tab" data-bs-toggle="pill" data-bs-target="#pills-more" type="button" role="tab" aria-controls="pills-more" aria-selected="false">
+                        <i class="fas fa-cog font_icon"></i>
+                        More
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-summary" role="tabpanel" aria-labelledby="pills-summary-tab">
+                    <div class="summary_section pills_tab_content">
+                        <div class="blck_trans_box">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <ul class="list-unstyled blck_trans_left">
+                                        <li>
+                                            <h4>Timeblockchain</h4>
+                                        </li>
+                                        <li>
+                                            <h5>- CSM</h5>
+                                        </li>
+                                        <li>
+                                            <p>Number of pending transactions:</p>
+                                            <span>0</span>
+                                        </li>
+                                        <li>
+                                            <p>Number of transactions:</p>
+                                            <span>5</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <ul class="list-unstyled blck_trans_right">
+                                        <li>
+                                            <h6>Converts as</h6>
+                                        </li>
+                                        <li>
+                                            <p>- USD</p>
+                                        </li>
+                                        <li>
+                                            <p>1 CSM = 2.1 USD</p>
+                                        </li>
+                                        <li>
+                                            <b>converted a few seconds ago <i class="fas fa-cog font_icon"></i></b>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="loader_box">
+                            <p>Your transaction history of this wallet is begin synced with the blockchain.</p>
+                        </div>
+                        <div class="csm_summy_databox">
+                            <span class="csm_current_date">20/10/2021</span>
+                            <div class="csm_data_box">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <div class="csm_data_icon csm_send_data">
+                                            <i class="fas fa-arrow-down font_icon"></i>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="csm_data_name">
+                                            <p>Multiple tokens received</p>
+                                            <span>Confirmed transaction, 06:51:21 PM </span>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="csm_data_value">
+                                            <span>2.00000 CSM</span>
+                                            <b class="csm_tran_status">
+                                                Transactions Confirmed
+                                            </b>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <div class="csm_data_icon csm_recive_data">
+                                            <i class="fas fa-arrow-up font_icon"></i>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="csm_data_name">
+                                            <p>Csm sent</p>
+                                            <span>Csm transaction, 06:50:22 PM </span>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="csm_data_value">
+                                            <span>-7.58964 CSM</span>
+                                            <b class="csm_tran_status">
+                                                Transactions Confirmed
+                                            </b>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-send" role="tabpanel" aria-labelledby="pills-send-tab">
+                    <div class="send_section pills_tab_content">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputAddress" class="form-label">Receiver</label>
+                                <input type="text" class="form-control" id="exampleInputAddress" placeholder="Wallet Address">
+                            </div>
+                            <div class="mb-3 amount_field">
+                                <label for="exampleInputAmount" class="form-label">Amount</label>
+                                <input type="number" class="form-control" id="exampleInputAmount" placeholder="0.0000">
+                                <span>CSM</span>
+                            </div>
+                            <button type="submit" class="btn frm_send_btn">Next</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-receive" role="tabpanel" aria-labelledby="pills-receive-tab">
+                    <div class="receive_section pills_tab_content">
+                        <h2>Available wallet addresses</h2>
+                        <h6>Share any of these wallet address to receive payments in csm or a native cardano token.</h6>
+                        <p>Privacy warning: Please note that all of your receiving addresses include your stake key. When you share a receiving address, the recipient can search the blockchain using your stake key to locate all addresses associated with
+                            your wallet, and also discover your wallet balance and transaction history.</p>
+                        <hr>
+                        <ul class="list-inline csm_table_head">
+                            <li class="list-inline-item">
+                                Receiving Addresses
+                            </li>
+                            <li class="list-inline-item ms-auto">
+                                Show used
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled table_receive_data">
+                            <li>
+                                <p>csm_1357435dashlkvsm13257sdfhkj13567sdfjk1357435dashlkvsm13257sdfhkj13567sdfjk</p>
+                                <span><i class="fas fa-qrcode font_icon"></i>Share</span>
+                            </li>
+                            <li>
+                                <p>csm_1357435dashlkvsm13257sdfhkj13567sdfjk1357435dashlkvsm13257sdfhkj13567sdfjk</p>
+                                <span><i class="fas fa-qrcode font_icon"></i>Share</span>
+                            </li>
+                            <li>
+                                <p>csm_1357435dashlkvsm13257sdfhkj13567sdfjk1357435dashlkvsm13257sdfhkj13567sdfjk</p>
+                                <span><i class="fas fa-qrcode font_icon"></i>Share</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-transactions" role="tabpanel" aria-labelledby="pills-transactions-tab">
+                    <div class="transactions_section pills_tab_content">
+                        <div class="trans_histy_data">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h5>Transactions (<span>5</span>)</h5>
+                                </li>
+                                <li class="list-inline-item ms-auto">
+                                    <button type="button" class="btn csv_export">Export CSV <i
+                                            class="fas fa-download font_icon"></i></button>
+                                    <button type="button" class="btn filter_btn">Filter <i
+                                            class="fas fa-filter font_icon"></i></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="csm_summy_databox">
+                            <span class="csm_current_date">20/10/2021</span>
+                            <div class="csm_data_box">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="headingOne">
+                                            <ul class="list-inline" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                <li class="list-inline-item">
+                                                    <div class="csm_data_icon csm_send_data">
+                                                        <i class="fas fa-arrow-down font_icon"></i>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <div class="csm_data_name">
+                                                        <p>Multiple tokens received</p>
+                                                        <span>Confirmed transaction, 06:51:21 PM </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <div class="csm_data_value">
+                                                        <span>2.00000 CSM</span>
+                                                        <b class="csm_tran_status">
+                                                            Transactions Confirmed
+                                                        </b>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body trans_content_box">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-12">
+                                                        <h5>From addresses</h5>
+                                                    </div>
+                                                    <div class="col-lg-12 col-12">
+                                                        <p>Show address text 546587654512487654</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-12">
+                                                        <h5>To addresses</h5>
+                                                    </div>
+                                                    <div class="col-lg-12 col-12">
+                                                        <p>Show address text 546587654512487654</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-12">
+                                                        <h5>Transaction ID</h5>
+                                                    </div>
+                                                    <div class="col-lg-12 col-12">
+                                                        <p>Show address text 546587654512487654</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-12">
+                                                        <h5>Transaction metadata</h5>
+                                                    </div>
+                                                    <div class="col-lg-12 col-12">
+                                                        <p>Show address text 546587654512487654</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" id="headingTwo">
+                                            <ul class="list-inline" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <li class="list-inline-item">
+                                                    <div class="csm_data_icon csm_recive_data">
+                                                        <i class="fas fa-arrow-up font_icon"></i>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <div class="csm_data_name">
+                                                        <p>Csm sent</p>
+                                                        <span>Csm transaction, 06:50:22 PM </span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <div class="csm_data_value">
+                                                        <span>-7.58964 CSM</span>
+                                                        <b class="csm_tran_status">
+                                                            Transactions Confirmed
+                                                        </b>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body trans_content_box">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-12">
+                                                        <h5>From addresses</h5>
+                                                    </div>
+                                                    <div class="col-lg-12 col-12">
+                                                        <p>Show address text 546587654512487654</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-12">
+                                                        <h5>To addresses</h5>
+                                                    </div>
+                                                    <div class="col-lg-12 col-12">
+                                                        <p>Show address text 546587654512487654</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-12">
+                                                        <h5>Transaction ID</h5>
+                                                    </div>
+                                                    <div class="col-lg-12 col-12">
+                                                        <p>Show address text 546587654512487654</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-12">
+                                                        <h5>Transaction metadata</h5>
+                                                    </div>
+                                                    <div class="col-lg-12 col-12">
+                                                        <p>Show address text 546587654512487654</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-more" role="tabpanel" aria-labelledby="pills-more-tab">
+                    <div class="more_section pills_tab_content">
+                        <div class="more_top_box">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Name</label>
+                                    <div class="input-group mb-3 form_input_grp">
+                                        <input type="text" class="form-control" id="exampleInputName">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword" class="form-label">Password</label>
+                                    <div class="input-group mb-3 form_input_grp">
+                                        <input type="password" class="form-control" id="exampleInputPassword">
+                                        <a href="javascript:;" class="pass_chng" data-bs-toggle="modal" data-bs-target="#change_password">Change</a>
+                                    </div>
+                                </div>
+                            </form>
+                            <h4>Do you have your wallet recovery phrase?</h4>
+                            <p>Funds in this wallet can only be recovered using the correct wallet recovery phrase, which is a unique 12-word string you were shown and asked to write down when creating this wallet. You can re-enter your wallet recovery phrase
+                                to verify that you have the correct recovery phrase for this wallet.
+                            </p>
+                            <div class="wlt_vrfy">
+                                <i class="fas fa-check-circle font_icon"></i>
+                                <p>We recommend that your verify your wallet recovery phrase in <b>5 months</b>.</p>
+                                <button type="button" class="btn verify_wlt_btn">Verify wallet recovery phrase</button>
+                            </div>
+                        </div>
+                        <div class="more_btm_box">
+                            <div class="more_btm_lftbox">
+                                <h5>Delete Wallet</h5>
+                                <p>Once you delete this wallet it will be removed from tha CSM interface and you will lose access to any remaining funds in the wallet. The only way to regain access after deletion is by restoring it using your wallet recovery
+                                    phrase.
+                                </p>
+                                <p>You may wish to verify your recovery phrase before deletion to ensure that you can restore this wallet in the future, if desired.</p>
+                            </div>
+                            <div class="more_btm_rgtbox">
+                                <button type="button" class="btn dlt_wlt_btn">Delete wallet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main section content close here -->
+    </div>
+</main>
+<!-- partial -->
+
+
+
+<!-- add wallet popup start here -->
+<section class="addwallet_popup">
+    <div class="modal fade" id="addWalletModalToggle" aria-hidden="true" aria-labelledby="addWalletModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="addWalletModalToggleLabel">Add Wallet</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-ms-7 col-sm-8 col-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-ms-6 col-sm-6 col-12">
+                                <a href="javascript:;" class="add_wlt_box">
+                                    <i class="fas fa-plus font_icon"></i>
+                                    <h4>Create</h4>
+                                    <p>Create a new wallet</p>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-ms-6 col-sm-6 col-12">
+                                <a href="javascript:;" class="add_wlt_box">
+                                    <i class="fas fa-users font_icon"></i>
+                                    <h4>Join</h4>
+                                    <p>Create a new wallet</p>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-ms-6 col-sm-6 col-12">
+                                <a href="javascript:;" class="add_wlt_box">
+                                    <i class="fas fa-sync-alt font_icon"></i>
+                                    <h4>Restore</h4>
+                                    <p>Create a new wallet</p>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-ms-6 col-sm-6 col-12">
+                                <a href="javascript:;" class="add_wlt_box">
+                                    <i class="fas fa-cloud-download-alt font_icon"></i>
+                                    <h4>Import</h4>
+                                    <p>Create a new wallet</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- add wallet popup start here -->
+
+<!-- change password modal start here -->
+<div class="changepass_modal">
+    <!-- Modal -->
+    <div class="modal fade" id="change_password" tabindex="-1" aria-labelledby="change_passwordLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="change_passwordLabel">Change Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="change_pass_form">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="currentPassword" class="form-label">Current Password</label>
+                            <input type="password" class="form-control" id="currentPassword" placeholder="Type Current Password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label">New Password</label>
+                            <input type="password" class="form-control" id="newPassword" placeholder="Type New Password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="repeatPassword" class="form-label">Repeat Password</label>
+                            <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat New Password">
+                        </div>
+                        <p>The password needs to be <b>at least 10 characters</b> and <b>at most 255 characters</b> long.</p>
+                        <button type="button" class="btn chng_pass_save">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- database table js here -->
+
+<!-- fontAwesome js -->
+<script src="assets/js/all.js"></script>
+
+<!-- Custom script js -->
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>
